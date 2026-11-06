@@ -21,8 +21,8 @@ public class TimetableGetTrainingSessionsForDayAndTimeTest {
             DayOfWeek.MONDAY, new TimeOfDay(13, 0)).size());
 
         //Проверить, что за понедельник в 14:00 не вернулось занятий
-        Assertions.assertNull(timetable.getTrainingSessionsForDayAndTime(
-            DayOfWeek.TUESDAY, new TimeOfDay(14, 0)));
+        Assertions.assertEquals(0, timetable.getTrainingSessionsForDayAndTime(
+            DayOfWeek.TUESDAY, new TimeOfDay(14, 0)).size());
     }
 
     @Test
