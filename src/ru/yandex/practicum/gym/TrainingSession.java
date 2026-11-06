@@ -18,6 +18,11 @@ public class TrainingSession {
         this.timeOfDay = timeOfDay;
     }
 
+    @Override
+    public String toString() {
+        return group.getTitle() + " (" + coach.getFullName() + ")";
+    }
+
     public Group getGroup() {
         return group;
     }
