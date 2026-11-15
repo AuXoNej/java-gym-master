@@ -30,6 +30,10 @@ public class Coach {
         return Objects.hash(surname, name, middleName);
     }
 
+    public String getFullName() {
+        return surname + " " + name + " " + middleName;
+    }
+
     public String getSurname() {
         return surname;
     }
